@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World!</title>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -51,7 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/" style="padding-left: 30px">Jiaming Song</a>
+            <a class="navbar-brand" href="/" style="padding-left: 30px;font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;color: #e77500;">Jiahao Yao</a>
         </div>
 
 
@@ -94,61 +95,30 @@
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
       
       <h2>Hello World!</h2>
-      <!--h5>by Jiaming Song </h5-->
+      <!--h5>by Jiahao Yao </h5-->
       <!--hr/-->
       
-      <p>Finally I decide to open a blog here. I will write mostly about research stuff - some recent work will come out shortly - but in this post I just want to talk about the blog itself.</p>
+      <p>FInally, I decide to use this template for my blog. I will be my technique blog, and I will write all about my research stuff. It is sure to be a fantastic thing to maintain in my life.</p>
 
-<p>It is a long journey to start with <a href="https://jekyllrb.com">Jekyll</a> from scratch<sup id="fnref:medium"><a href="#fn:medium" class="footnote">1</a></sup> - I have always wanted more customization options, but I really know little about web developing.</p>
+<p>I am so lucky to get to know the blog coincidentally when I search the research paper about Markov Chain and Generative Adversarial Network. It seems that I fall in love with the simple style and I also admire Jiaming Song<sup id="fnref:JiamingSong"><a href="#fn:JiamingSong" class="footnote">1</a></sup>. For sake of setting as an example of me, I heuristically use his template for the blog. And in the end, I sincerely thank him.</p>
 
-<p>It all started when I was writing a website for grad school applications. I started off by using the <a href="http://fezvrasta.github.io/bootstrap-material-design/">Bootstrap Material Design</a> template, which I used during a <a href="http://tsong.me/projects/biopedia/">course project</a>. It was a great template, but I just did not like Google’s Roboto font in paragraphs. So after I got to Stanford, I changed to the <a href="https://bootswatch.com/paper/">Paper template @ Bootswatch</a>. Material Design rocks!</p>
+<p>Also, Along the way, I am also grateful to other people who have helped me with my dream of building up my personal pages. First, there is another homepage <a href="http://zi-wang.com/">Zi Wang’s Homepage</a>. I really love the Font used in the word “Zi Wang’s Homepage”. Almost when I am discouraged to get the font in my new homepage, I turn to Slinuxer <sup id="fnref:Slinuxer"><a href="#fn:Slinuxer" class="footnote">2</a></sup> for help. He gives me the great insight of how to use the Chrome for debugging, with which technique I succeed in getting the font name of “Zi Wang’s Homepage” and Hex color of Princeton’s Orange. Finally, Our trouble becomes how to local generate the homepage using the jekyll. Since using the Mac, there might be some problems about installing the packages, which is not easy compared with the Linux. THe Biggest problem lies in the Edition of Ruby and the installation of the nokogiri packages and I hope this <a href="http://railsapps.github.io/installrubyonrails-mac.html">blog</a> and <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/">Official Blog</a> can help if you have the same problems.</p>
 
-<p>But the font problem persists. Then I took inspiration from <a href="https://typora.io">Typora</a>, a fantastic Markdown editor. I love how beautiful the rendering in a WYSIWYG style, and I thought it would be pleasing to see this style in the blog posts, so I can basically type in Typora and publish directly without worring about the style in the browser. This can be done easily since Typora (and most other Markdown editors) use CSS templates for rendering; so I took it. I really have no idea how adding a file replaces the Roboto font, but it worked, so I never bothered to know why <sup id="fnref:phd"><a href="#fn:phd" class="footnote">2</a></sup>.</p>
+<p>After all these trouble-shooting, I really appreciate all the lovely people around me and they help me get what I want. And I sincerely hope that the homepage will give me more insight and thinking about the life and research.</p>
 
-<p>However, the process was not entirely smooth, and I list some of the problems that I encountered and their solutions:</p>
-
-<ol>
-  <li>Math does not render properly in the browser but it works perfectly in Typora. <strong>Solution</strong>: All math in Kramdown are enclosed in double dollar signs. Luckily, Typora supports this, so the problem is solved.</li>
-  <li>Disqus just does not work. <strong>Solution</strong>: I found the documentation in the official website very confusing. <a href="http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/">This blog post</a> is a much better guide.</li>
-  <li>I need citations. <strong>Solution:</strong> Use <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll Scholar</a>.</li>
-  <li>Images do not appear where I want it to. <strong>Solution</strong>: Use Kramdown IAL, such as <code class="highlighter-rouge"><span class="p">{</span><span class="err">:.center</span><span class="p">}</span></code>, and some CSS hacks will get you there. Or use plain Photoshop.</li>
-  <li>Github does not support Jekyll plugins. <strong>Solution:</strong> either use your own host, or <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">publish through the <code class="highlighter-rouge">/docs</code> folder</a>.</li>
-</ol>
-
-<p><br /></p>
-
-<p>Here is a comparison between browser and Typora:</p>
-
-<p><strong>Browser:</strong><sup id="fnref:mathjax"><a href="#fn:mathjax" class="footnote">3</a></sup></p>
-
-<p><img src="/public/img/blog/browser.png" alt="" /></p>
-
-<p><strong>Typora</strong>:</p>
-
-<p><img src="/public/img/blog/typora.png" alt="" /></p>
-
-<p>So basically, WYSIWYG!</p>
-
-<p><br /></p>
-
-<p>The code for this blog is fully available <a href="https://github.com/jiamings/tsong.me">on Github</a>. Feel free to use the code - I will be grateful if you include a link to <a href="http://tsong.me">tsong.me</a> in the footer of your blog.</p>
-
-<p>Certain style details of the blog are inspired by <a href="http://blog.otoro.net/">Otoro</a> and <a href="http://dustintran.com/blog/">Dustin Tran’s Blog</a>.</p>
-
-<hr />
+<p>Merci <sup id="fnref:Merci"><a href="#fn:Merci" class="footnote">3</a></sup> ~</p>
 
 <h4 id="footnotes">Footnotes</h4>
-
 <div class="footnotes">
   <ol>
-    <li id="fn:medium">
-      <p>Medium does not support math, and Ghost is expensive (and I didn’t really need it by the time I encountered it).&nbsp;<a href="#fnref:medium" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:JiamingSong">
+      <p><a href="tsong.me">Jiaming Song</a> is BS in Tsinghua (Top one), and PHD in CS department in Stanford&nbsp;<a href="#fnref:JiamingSong" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:phd">
-      <p>I am a machine learning Ph.D, not a front-end developer.&nbsp;<a href="#fnref:phd" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:Slinuxer">
+      <p><a href="https://blog.slinuxer.com/">Slinuxer</a> is Prof. <a href="https://exacity.github.io/zhzhang.html">Zhihua Zhang</a> ‘s Master who masters the skill of being a geeker&nbsp;<a href="#fnref:Slinuxer" class="reversefootnote">&#8617;</a></p>
     </li>
-    <li id="fn:mathjax">
-      <p>Math is not pretty. Use Common HTML in MathJax to fix this.&nbsp;<a href="#fnref:mathjax" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:Merci">
+      <p>French word meaning thank you. I am also eager to learn French.&nbsp;<a href="#fnref:Merci" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -192,8 +162,9 @@
         <hr style="margin-top: 25px; margin-bottom: 25px;" />
         <p style="text-align: center; font-size: 14px;">
             © 2017 •
-            <a href="">tsong.me</a> •
-            <a href="" target="_top">tsong@cs.stanford.edu</a>
+            <a href="">jiahaoyao.github.io</a> •
+            <a href="" target="_top">jiahaoyao.math@gmail.edu</a>•
+            thanks to <a href="">tsong.me</a> 
         </p>
     </div>
 </footer>
