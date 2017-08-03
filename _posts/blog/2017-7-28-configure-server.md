@@ -6,8 +6,6 @@ tags:
 - blog
 ---
 
-# Configure Server
-
 It always takes a lot of time for one to configure his or her server. I always thank to those who keep me company and encourage and suppport me to create better environment for my server. Therefore, here is what I want to share with you, hoping to be useful to anyone who struggles.
 
 ## Without Root
@@ -40,6 +38,9 @@ Sometimes, without root, it is always troublesome. With Root, you can easily and
     - ```Bash
       export GOROOT=$HOME/go1.X
       export PATH=$PATH:$GOROOT/bin
+      ```
+      ```
+
       ```
 
 

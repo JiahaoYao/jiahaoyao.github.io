@@ -1,0 +1,348 @@
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configure Server</title>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/github.css" rel="stylesheet">
+    <style>
+        hr {
+            height: 1px;
+        }
+        footer {
+            font-family: "Noto Sans", "Arial", sans-serif;
+            margin-top: 50px;
+        }
+        img {
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: auto;
+            max-width:90%;
+            max-height:90%;
+        }
+        img.center {
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            max-width:90%;
+            max-height:90%;
+            display: block;
+        }
+        p {
+            line-height: 1.5; margin-top: 15px; margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body style="font-size: 16px;">
+
+<nav class="navbar navbar-default" style="display: block; font-size: 18px;" role="navigation">
+    <div class="container col-lg-8 col-lg-offset-2">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-data" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="padding-left: 30px;font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;color: #e77500;">Jiahao Yao</a>
+        </div>
+
+
+        <div id="navbar-data" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!--li>
+                    <a href="/" style="padding-left: 30px">Home</a>
+                </li-->
+                <li>
+                    <a href="/blog" style="padding-left: 30px">Articles</a>
+                </li>
+                <!--li>
+                    <a href="/projects" style="padding-left: 30px">Projects</a>
+                </li-->
+                <!--li>
+                    <a href="/reading" style="padding-left: 30px">Reading</a>
+                </li-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://github.com/jiahaoyao" target="_blank" style="padding-left: 30px"><img src="/public/img/icon/github.min.svg" height="24px" width="24px"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Jiahao_Yao" target="_blank" style="padding-left: 30px"><img src="/public/img/icon/twitter.min.svg" height="24px" width="24px"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jiahao-yao-37514613a/" target="_blank" style="padding-left: 30px"><img src="/public/img/icon/linkedin.min.svg" height="24px" width="24px"></a>
+                </li>
+                <li>
+                    <a href="/static/jiahao_cv.pdf" target="_blank" style="padding-left: 30px">Curriculum Vitae</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container" style="margin-top: 50px;">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+      
+      <h2>Configure Server</h2>
+      <!--h5>by Jiahao Yao </h5-->
+      <!--hr/-->
+      
+      <p>It always takes a lot of time for one to configure his or her server. I always thank to those who keep me company and encourage and suppport me to create better environment for my server. Therefore, here is what I want to share with you, hoping to be useful to anyone who struggles.</p>
+
+<h2 id="without-root">Without Root</h2>
+
+<p>Sometimes, without root, it is always troublesome. With Root, you can easily and comfortably get what you want.</p>
+
+<h3 id="anaconda">Anaconda</h3>
+
+<ul>
+  <li>Go to the official page to download anaconda for your server
+    <ul>
+      <li>conda create -n [NameOfWorkplace] python=3.5/2.7</li>
+      <li>source activate [NameOfWorkplace]</li>
+      <li>pip install tensorflow/pytorch/jupyter+nb_conda/mxnet/</li>
+      <li>source deactivate</li>
+      <li>use conda clean to put aside some space for your computer</li>
+    </ul>
+  </li>
+  <li>conda Install r / conda install r-essentials</li>
+</ul>
+
+<h3 id="julia">Julia</h3>
+
+<ul>
+  <li>
+    <p>Also, wget -&gt; configure -&gt; make -&gt; make install</p>
+  </li>
+  <li>
+    <div class="language-julia highlighter-rouge"><pre class="highlight"><code><span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="x">(</span><span class="s">"IJulia"</span><span class="x">)</span>
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<h3 id="go">GO</h3>
+
+<ul>
+  <li>
+    <p>Wget the tar.gz file</p>
+
+    <ul>
+      <li>add the following to .bashrc</li>
+      <li>
+        <pre><code class="language-Bash">export GOROOT=$HOME/go1.X
+export PATH=$PATH:$GOROOT/bin
+</code></pre>
+        <div class="highlighter-rouge"><pre class="highlight"><code>
+</code></pre>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="cmake">Cmake</h3>
+
+<ul>
+  <li>Wget the tar.gz file (This is one no need to build from source)</li>
+  <li>It is the one you might hardly update</li>
+  <li>you can copy this folder to your folder which stores mostly your packages</li>
+</ul>
+
+<h3 id="tmux">Tmux</h3>
+
+<ul>
+  <li>Wget the tar.gz file, but have to install two dependences first
+    <ul>
+      <li>
+        <p>ncurses</p>
+
+        <ul>
+          <li>
+            <p>Wget the tar.gz file</p>
+          </li>
+          <li>
+            <p>tar -zxvf tar.gz file</p>
+          </li>
+          <li>
+            <pre><code class="language-Bash">./configure --prefix=/home/me/somefolder/mybuild/output/target 
+make 
+make install
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>​ libevent</p>
+
+        <ul>
+          <li>
+            <p>Wget the tar.gz file</p>
+          </li>
+          <li>
+            <p>tar -zxvf tar.gz file</p>
+          </li>
+          <li>
+            <pre><code class="language-Bash">./configure --prefix=/home/me/somefolder/mybuild/output/target CFLAGS="-I$DIR/include" LDFLAGS="-L$DIR/lib"
+make 
+make install
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Tmux</p>
+
+        <ul>
+          <li>
+            <div class="language-bash highlighter-rouge"><pre class="highlight"><code>./configure --prefix<span class="o">=</span>/home/me/somefolder/mybuild/output/target 
+make 
+make install
+</code></pre>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="zsh">Zsh</h3>
+
+<ul>
+  <li>
+    <p>Wget  the tar.gz file, installing from the source</p>
+
+    <ul>
+      <li>
+        <p>configure -&gt; make -&gt; make install</p>
+      </li>
+      <li>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="o">[</span> -f <span class="o">(</span>path<span class="o">)</span>/bin/zsh <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">exec</span> <span class="o">(</span>path<span class="o">)</span>/bin/zsh -l
+</code></pre>
+        </div>
+      </li>
+      <li>
+        <p>Your zsh can be (path)/bin/zsh, and export this in ./bashrc</p>
+      </li>
+      <li>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">export </span><span class="nv">shell</span><span class="o">=(</span>path<span class="o">)</span>/bin/zsh
+</code></pre>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Oh My Zsh</p>
+
+    <ul>
+      <li>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code>wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh
+</code></pre>
+        </div>
+      </li>
+      <li>
+        <p>You modify oh-my-zsh-master/tools/install.sh, commend the following sentences</p>
+      </li>
+      <li>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code> <span class="nv">CHECK_ZSH_INSTALLED</span><span class="o">=</span><span class="k">$(</span>grep /zsh<span class="nv">$ </span>/etc/shells | wc -l<span class="k">)</span>
+  <span class="k">if</span> <span class="o">[</span> ! <span class="nv">$CHECK_ZSH_INSTALLED</span> -ge 1 <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">printf</span> <span class="s2">"</span><span class="k">${</span><span class="nv">YELLOW</span><span class="k">}</span><span class="s2">Zsh is not installed!</span><span class="k">${</span><span class="nv">NORMAL</span><span class="k">}</span><span class="s2"> Please install zsh first!</span><span class="se">\n</span><span class="s2">"</span>
+    <span class="nb">exit
+  </span><span class="k">fi
+  </span><span class="nb">unset </span>CHECK_ZSH_INSTALLED
+</code></pre>
+        </div>
+      </li>
+      <li>
+        <p>Then, you can modify the ~.oh-my-zsh/oh-my-zsh.sh, just commend the following sentences</p>
+      </li>
+      <li>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c"># Check for updates on initial load...</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$DISABLE_AUTO_UPDATE</span><span class="s2">"</span> !<span class="o">=</span> <span class="s2">"true"</span> <span class="o">]</span>; <span class="k">then
+  </span>env <span class="nv">ZSH</span><span class="o">=</span><span class="nv">$ZSH</span> <span class="nv">DISABLE_UPDATE_PROMPT</span><span class="o">=</span><span class="nv">$DISABLE_UPDATE_PROMPT</span> zsh -f <span class="nv">$ZSH</span>/tools/check_for_upgrade.sh
+<span class="k">fi</span>
+</code></pre>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Quite Grateful~</p>
+
+<p>Never End ~</p>
+
+
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+        <hr style="margin-top: 50px; margin-bottom: 50px;" />
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+        //var disqus_developer = 1; // Comment out when the site is live
+    var disqus_config = function () {
+            this.page.url = "http://tsong.me/blog/configure-server/";  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = "/blog/configure-server/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = 'https://tsong-me.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    </div>
+</div>
+</div>
+
+
+
+<footer style="margin-top: 0px;">
+    <div class="container" style="margin-top: 25px; margin-bottom: 20px;">
+        <hr style="margin-top: 25px; margin-bottom: 25px;" />
+        <p style="text-align: center; font-size: 14px;">
+            © 2017 •
+            <a href="">jiahaoyao.github.io</a> •
+            <a href="" target="_top">jiahaoyao.math@gmail.edu</a>•
+            thanks to <a href="">tsong.me</a> 
+        </p>
+    </div>
+</footer>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68764449-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
