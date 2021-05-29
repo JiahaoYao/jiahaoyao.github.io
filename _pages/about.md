@@ -16,7 +16,7 @@ Ph.D. Candidate, Applied Mathematics<br/>
 
 I am a fourth year Ph.D. candidate in Applied Mathematics in UC Berkeley, advised by [Lin Lin](https://math.berkeley.edu/~linlin/). I did my undergrad in the Department of Mathematics, Peking University.
 
-My research is centered on scientific mathine learning, with various applications on quantum control, reinforcement learning and deep unsupervised learning. Recently, I am interested in the following topics:
+My research is centered on scientific mathine learning, with various applications on quantum control, reinforcement learning and deep unsupervised learning. 
 
 
 **Email**: jiahao [at] math [dot] berkeley [dot] edu
