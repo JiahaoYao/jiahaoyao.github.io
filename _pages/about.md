@@ -7,7 +7,7 @@ description:
 
 news: true
 social: true
-years: [2020]
+years: [2021, 2020]
 ---
 
 Ph.D. Candidate, Applied Mathematics<br/>
@@ -36,4 +36,4 @@ My research is centered on scientific mathine learning, with various application
 
 ----
 
-**Acknowledgements**: based on the [al-folio](https://github.com/alshedivat/al-folio) template by [Maruan Al-Shedivat](https://www.cs.cmu.edu/~mshediva/).
+**Acknowledgements**: based on the [al-folio](https://github.com/alshedivat/al-folio) template modified by [Tony Song](https://tsong.me/).
